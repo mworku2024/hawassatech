@@ -28,7 +28,7 @@ body {
     padding: 90px 0;
 }
 
-.logo {
+.logo2 {
     width: 180px;       
     max-width: 100%;    
     height: auto;      
@@ -48,17 +48,60 @@ body {
 }
 
 .logo {
+   
+    display: flex;
+    flex-direction: column;
     font-size: 25px;
     font-weight: bold;
     color: white;
     text-decoration: none;
 }
 
-.logo span,
+,
 .footer span {
     color: #0879e8;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: white;
+}
+
+.logo2 {
+    width: 120px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+   
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-name {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.logo-name span,
+.footer span {
+    color: #0879e8;
+}
+
+.tagline {
+    font-size: 11px;
+    color: #e8a619;
+    text-transform: uppercase;
+    margin: 4px 0 0;
+    letter-spacing: 1px;
+}
 .nav-links {
     display: flex;
     list-style: none;
@@ -438,4 +481,3 @@ body {
     }
 
 }
-
