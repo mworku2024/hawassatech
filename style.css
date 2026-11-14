@@ -39,7 +39,10 @@ body {
 .header {
     background-color: #10243a;
     padding: 20px 0;
-}
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}   
 
 .navbar {
     display: flex;
@@ -57,7 +60,7 @@ body {
     text-decoration: none;
 }
 
-,
+
 .footer span {
     color: #0879e8;
 }
@@ -106,12 +109,17 @@ body {
     display: flex;
     list-style: none;
     gap: 30px;
+    border-radius: 5px;
+    border-top: 1px solid #d5dce5;
+    border-bottom: 1px solid #d5dce5;
+    padding: 15px 0;
 }
 
 .nav-links a {
     text-decoration: none;
     color: white;
-    transition: 0.3s;
+    transition: color 0.3s ease;
+    font-weight: 500;
 }
 
 .nav-links a:hover {
@@ -151,7 +159,7 @@ body {
 }
 
 .hero h1 {
-    font-size: 48px;
+    font-size: 32px,5vw,48px;
     line-height: 1.2;
     margin-bottom: 20px;
 }
@@ -218,8 +226,9 @@ body {
     margin: 0 auto 50px;
 }
 
-.section-heading h2 {
-    font-size: 34px;
+.section-heading h2
+.about-text h2 {
+    font-size:27px ,4vw , 34px;
     margin-bottom: 15px;
     color: #10243a;
 }
@@ -242,11 +251,13 @@ body {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
-    transition: 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #edf1f5;
 }
 
 .service-card:hover {
     transform: translateY(-7px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 }
 
 .service-icon {
@@ -452,6 +463,10 @@ body {
         flex-wrap: wrap;
         justify-content: center;
         gap: 15px;
+        border-top: 1px solid #d5dce5;
+        border-bottom: 1px solid #d5dce5;
+        border-radius: 5px;
+        padding: 15px 0;
     }
 
    
