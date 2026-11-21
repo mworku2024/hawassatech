@@ -39,11 +39,14 @@ body {
 .header {
     background-color: #10243a;
     padding: 20px 0;
-    position: sticky;
+    
     top: 0;
     z-index: 1000;
+    
 }   
-
+.container{
+  
+}
 .navbar {
     display: flex;
     align-items: center;
@@ -71,10 +74,11 @@ body {
     gap: 12px;
     text-decoration: none;
     color: white;
+    
 }
 
 .logo2 {
-    width: 120px;
+    width: 100px;
     height: auto;
     object-fit: cover;
     border-radius: 50%;
@@ -110,8 +114,7 @@ body {
     list-style: none;
     gap: 30px;
     border-radius: 5px;
-    border-top: 1px solid #d5dce5;
-    border-bottom: 1px solid #d5dce5;
+   
     padding: 15px 0;
 }
 
@@ -123,9 +126,11 @@ body {
 }
 
 .nav-links a:hover {
-    color: #58aaff;
+    color: goldenrod;
 }
-
+.logo-name{
+    text-align: center;
+}
 .nav-btn {
     background-color: #0879e8;
     color: white;
@@ -406,6 +411,7 @@ body {
     display: flex;
     gap: 25px;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 
  .nav-btn:hover{
@@ -453,6 +459,9 @@ body {
 
 @media (max-width: 700px) {
 
+   
+        
+ 
     .container {
         width: 92%;
     }
@@ -489,6 +498,7 @@ body {
     }
 
     .pq {
+        display: flex;
         justify-content: center;
         gap: 10px;
     }
