@@ -1,4 +1,4 @@
-ion
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -46,8 +46,7 @@ ion
                 </ul>
             </nav>
             <div class="pq">
-             <a  href="https://mworku2024.github.io/portfolio/"
-                 target= "_blank"  class="nav-btn">
+             <a  href="https://mworku2024.github.io/portfolio/" class="nav-btn">
                 የግል ፖርትፎሊዮ
             </a>
             <a href="#contact" class="nav-btn">
@@ -353,41 +352,41 @@ ion
                 </div>
 
 
-                <form class="contact-form">
+                <form class="contact-form"
+                            action="https://formspree.io/f/mnpdwwvr"
+                            method="POST">
 
-                    <input
-                        type="text"
-                        placeholder="Your Name"
-                        required>
+                            <input
+                            type="text"
+                            name="name"
+                            placeholder="Your Name"
+                            required>
 
-                    <input
-                        type="email"
-                        placeholder="Your Email"
-                        required>
+                            <input
+                            type="email"
+                            name="email"
+                            placeholder="Your Email"
+                            required>
 
-                    <select required>
+                            <select name="service" required>
+                            <option value="">Select a Service</option>
+                            <option value="Computer Repair">Computer Repair</option>
+                            <option value="Website Design">Website Design</option>
+                            <option value="IT Support">IT Support</option>
+                            </select>
 
-                        <option value="">
-                            Select a Service
-                        </option>
+                            <textarea
+                            name="message"
+                            placeholder="Tell us how we can help..."
+                            rows="5"
+                        required></textarea>
 
-                        <option>Computer Repair</option>
-                        <option>Website Design</option>
-                        <option>IT Support</option>
+                        <button type="submit">
+                            Send Message
+                        </button>
 
-                    </select>
+                    </form>
 
-                    <textarea
-                        placeholder="Tell us how we can help..."
-                        rows="5"
-                        required>
-                    </textarea>
-
-                    <button type="submit">
-                        Send Message
-                    </button>
-
-                </form>
 
             </div>
 
