@@ -38,8 +38,8 @@ body {
 
 .header {
     background-color: #10243a;
-    padding: 20px 0;
-    
+    padding: 15px 0;
+    position: sticky;
     top: 0;
     z-index: 1000;
     
@@ -51,6 +51,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 16px;
 }
 
 .logo {
@@ -121,22 +122,30 @@ body {
 .nav-links a {
     text-decoration: none;
     color: white;
-    transition: color 0.3s ease;
+   transition: color 0.3s ease;
     font-weight: 500;
+    
+        padding: 5px 5px;
+        border-radius: 5px;
 }
 
 .nav-links a:hover {
-    color: goldenrod;
+   background: #58aaff;
+   background: transparent;
 }
 .logo-name{
     text-align: center;
 }
 .nav-btn {
+    transition: background-color 0.3s ease;
     background-color: #0879e8;
     color: white;
     padding: 11px 20px;
     text-decoration: none;
     border-radius: 5px;
+}
+.nav-btn:hover {
+    background-color: #0564c2;
 }
 
 
@@ -164,7 +173,7 @@ body {
 }
 
 .hero h1 {
-    font-size: 32px,5vw,48px;
+    font-size: clamp(32px,5vw,48px);
     line-height: 1.2;
     margin-bottom: 20px;
 }
@@ -217,8 +226,9 @@ body {
 }
 
 .hero-image img {
-    width: 100%;
-    border-radius: 12px;
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
     display: block;
 }
 
@@ -231,9 +241,9 @@ body {
     margin: 0 auto 50px;
 }
 
-.section-heading h2
+.section-heading h2,
 .about-text h2 {
-    font-size:27px ,4vw , 34px;
+    font-size:clamp(27px ,4vw , 34px);
     margin-bottom: 15px;
     color: #10243a;
 }
@@ -495,6 +505,9 @@ body {
 
    .nav-links a {
         font-size: 14px;
+        
+        padding: 5px 5px;
+        border-radius: 5px;
     }
 
     .pq {
@@ -533,11 +546,14 @@ body {
     .community-text {
         font-size: 13px;
     }
+   
     .hero-image img {
-        width: 90%;
-       border-radius: 10px;
-        
-    }
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    display: block;
+}
+
     .section-heading h2{
         font-size: 28px;
     }
